@@ -6,13 +6,17 @@ h1 { margin: 0; font-size: 2.4rem; }
 .eyebrow { color: #4f46e5; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .card { background: white; border: 1px solid #dbe3ff; border-radius: 18px; box-shadow: 0 12px 30px rgb(79 70 229 / 10%); margin: 16px 0; padding: 20px; }
 .card h2 { margin-top: 0; }
+.helper-text { color: #4b5563; line-height: 1.5; }
 .online { color: #047857; font-weight: 700; }
 .offline, .error { color: #b91c1c; font-weight: 700; }
 .integration-list { list-style: none; padding: 0; }
 .integration-list li { display: flex; justify-content: space-between; padding: 10px 0; }
-textarea { box-sizing: border-box; width: 100%; border: 1px solid #c7d2fe; border-radius: 12px; padding: 12px; }
+label { display: block; font-weight: 700; margin-top: 14px; }
+input, textarea { box-sizing: border-box; width: 100%; border: 1px solid #c7d2fe; border-radius: 12px; padding: 12px; }
 button { background: #4f46e5; border: 0; border-radius: 999px; color: white; cursor: pointer; font-weight: 700; margin-top: 12px; padding: 12px 18px; }
+button.secondary { background: #475569; }
 button:disabled { background: #a5b4fc; cursor: not-allowed; }
+.button-row { display: flex; flex-wrap: wrap; gap: 10px; }
 .result-panel { background: #f8fafc; border-radius: 12px; margin-top: 16px; padding: 12px; }
 pre { overflow-x: auto; white-space: pre-wrap; }
 code { background: #eef2ff; border-radius: 6px; padding: 2px 6px; }

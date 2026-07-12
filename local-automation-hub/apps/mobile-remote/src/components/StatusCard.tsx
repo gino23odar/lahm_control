@@ -1,6 +1,8 @@
+import type { ReactNode } from 'react';
+
 interface StatusCardProps {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function StatusCard({ title, children }: StatusCardProps) {

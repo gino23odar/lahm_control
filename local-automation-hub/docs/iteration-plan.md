@@ -5,8 +5,10 @@
    - Add a Spring Boot desktop agent with health, device status, and preview-only command APIs.
    - Add a React mobile remote UI that reads mock status and requests command previews.
 
-2. **Secure pairing between phone and desktop**
-   - Add device pairing, local-network discovery assumptions, and authenticated API requests.
+2. **Pairing foundation between phone and desktop**
+   - Add temporary in-memory desktop pairing sessions.
+   - Add mobile pairing UI with desktop URL, device name, pairing code, and forget-pairing controls.
+   - Add local session-token headers without enforcing them on all APIs yet.
 
 3. **Discord OAuth on desktop agent**
    - Implement OAuth initiation and callback handling in the desktop agent only.
@@ -28,3 +30,13 @@
 
 9. **Android APK packaging with Capacitor**
    - Wrap the mobile remote with Capacitor and produce Android builds.
+
+## Future pairing hardening
+
+- QR code pairing
+- HTTPS or local TLS
+- Device approval from desktop
+- Token rotation
+- Persistent encrypted device registry
+- Revocation of paired devices
+- Request signing or mutual authentication

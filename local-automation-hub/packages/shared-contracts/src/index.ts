@@ -25,3 +25,33 @@ export interface CommandPreviewResponse {
   willExecute: boolean;
   preview: string;
 }
+
+export interface CreatePairingSessionResponse {
+  pairingCode: string;
+  pairingToken: string;
+  expiresInSeconds: number;
+  instructions: string;
+}
+
+export interface ConfirmPairingRequest {
+  pairingCode: string;
+  deviceName: string;
+}
+
+export interface ConfirmPairingResponse {
+  paired: boolean;
+  deviceId: string;
+  deviceName: string;
+  sessionToken: string;
+}
+
+export interface PairedDevice {
+  deviceId: string;
+  deviceName: string;
+  pairedAt: string;
+  lastSeenAt: string;
+}
+
+export interface ListPairedDevicesResponse {
+  devices: PairedDevice[];
+}
